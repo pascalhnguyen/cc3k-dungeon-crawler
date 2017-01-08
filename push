@@ -1,0 +1,2 @@
+git commit -m "v8 LATEST with pascal's wasd"
+git push -u origin master

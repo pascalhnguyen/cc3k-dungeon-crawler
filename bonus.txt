@@ -1,0 +1,9 @@
+SHEEP DLC:
+An extra player race was added as a fun addition. The Sheep race, with 250 HP, 20 ATK and 100 DEF. The sheep is immune to negative potions. Whenever the sheep successfully kills something, it gains 5 attack and 1 defence for only the floor.
+
+usage: type “h” to select sheep or press “6” if in keybind mode
+
+KEYBIND DLC:
+We decided that typing in commands for movement and actions was far too inconvenient for users. As such, we decided to implement keyboard controls using getch, removing the need to press “enter” every time the user wants to perform an action in-game. Looking into various methods for keybinding, we initially opted to use the ncurses library; however, this proved to be incompatible with our method of rendering the map using cout. As such, we used a custom getch function using getchar and termios to turn echo off.
+
+usage: add -dlc to turn on. Follow the onscreen instructions. “1-6” to select player race (instructions on screen) “o” is attack, “p” is use potion, “enter” to start/restart game, “esc” to exit game, “‘“ to freeze monsters (for testing).”q,w,e,a,d,z,x,c” for input.
